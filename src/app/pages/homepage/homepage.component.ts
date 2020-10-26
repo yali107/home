@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { Typewriter } from 't-writer.js';
+import { NgxTypedJsComponent } from 'ngx-typed-js';
 
 @Component({
   selector: 'app-homepage',
@@ -7,16 +7,22 @@ import { Typewriter } from 't-writer.js';
   styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent implements OnInit {
-  @ViewChild('tw') typewriterElement;
-
+  // @ViewChild(NgxTypedJsComponent) NgxTypedJsComponent;
   constructor() { }
 
   ngOnInit() {
-    const target = this.typewriterElement.nativeElement;
-    const writer = new Typewriter(target, {
-      loop: true,
-    })
-    writer.type('hi')
+
+  }
+
+  ngAfterViewInit() {
+    // console.log(this.typewriterElement)
+    // this.target = this.typewriterElement.nativeElement;
+
+    // this.writer = new Typewriter(this.target, {
+    //   loop: true,
+    //   typeColor: 'black'
+    // })
+    // this.writer.type("Without washing the brush, I'm gonna go right into some Van Dyke Brown, ").rest(500).start()
   }
 
 }
