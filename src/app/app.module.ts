@@ -11,19 +11,23 @@ import { CockpitLayoutComponent } from './layouts/cockpit-layout/cockpit-layout.
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { PersonalProjectsComponent } from './pages/personal-projects/personal-projects.component';
+import { InterestsAndHobbiesComponent } from './pages/interests-and-hobbies/interests-and-hobbies.component';
+import { PreviousWorkComponent } from './pages/previous-work/previous-work.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     NgbModule,
     RouterModule,
-    
+
     ComponentsModule,
     AppRoutingModule,
   ],
   declarations: [
     AppComponent,
     CockpitLayoutComponent,
+    InterestsAndHobbiesComponent,
+    PreviousWorkComponent,
     // HomepageComponent,
     // AboutMeComponent,
     // PersonalProjectsComponent

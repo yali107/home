@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgxTypedJsModule } from 'ngx-typed-js';
 
 import { CockpitLayoutRoutes } from './cockpit-layout.routing';
 import { AboutMeComponent } from '../../pages/about-me/about-me.component';
@@ -18,6 +19,8 @@ import { HomepageComponent } from 'src/app/pages/homepage/homepage.component';
       FormsModule,
       HttpClientModule,
       NgbModule,
+      NgxTypedJsModule,
+
     ],
     declarations: [
       AboutMeComponent,
