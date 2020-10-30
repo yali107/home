@@ -8,10 +8,14 @@
             </div>
         </div>
     </div>
+    [ngStyle]="{'background-image': 'url(../assets/img/headshot.jpg)'}"
 </div> -->
-<ngx-typed-js [strings]="['DATA SCIENTIST.', 'MACHINE LEARNING ENGINEER.', 'FULLSTACK DEVELOPER.']" [typeSpeed]="40" [loop]="true">
-    <h1 class="display-1">I <span style="font-size:10">AM </span> <span class="typing"></span></h1>
-</ngx-typed-js>
+<div class="container-fluid bg">
+    <ngx-typed-js [strings]="['DATA SCIENTIST.', 'MACHINE LEARNING ENGINEER.', 'FULLSTACK DEVELOPER.']" [typeSpeed]="40"
+        [loop]="true">
+        <h1 class="display-1">I <span style="font-size:10">AM </span> <span class="typing"></span></h1>
+    </ngx-typed-js>
+</div>
 
 <!-- <ngx-typed-js [strings]="['Hello, ^200 my name is Vlad. ^1000 I am a full-stack web developer.']" [typeSpeed]="40">
     <h1 class="typing"></h1>

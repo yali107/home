@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid">
+        <!-- <div class="navbar-header">
+            <a class="navbar-brand pt-0" routerLinkActive="active" [routerLink]="['/dashboard']">
+                <img src="./assets/img/headshot.jpg" class="navbar-brand-img" alt="...">
+            </a>
+        </div> -->
+        <div class="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li *ngFor="let headerItem of headerItems" class="{{headerItem.class}} nav-item">
+                    <a routerLinkActive="active" [routerLink]="[headerItem.path]" class="nav-link">
+                        <i class="ni {{headerItem.icon}}"></i>
+                        {{headerItem.title}}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
