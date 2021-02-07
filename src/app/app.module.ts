@@ -7,12 +7,15 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ComponentsModule } from './components/components.module';
-import { CockpitLayoutComponent } from './layouts/cockpit-layout/cockpit-layout.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { PersonalProjectsComponent } from './pages/personal-projects/personal-projects.component';
 import { InterestsAndHobbiesComponent } from './pages/interests-and-hobbies/interests-and-hobbies.component';
 import { PreviousWorkComponent } from './pages/previous-work/previous-work.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { NgxTypedJsModule } from 'ngx-typed-js';
+import { PagesComponent } from './pages/pages.component';
 
 @NgModule({
   imports: [
@@ -20,17 +23,23 @@ import { PreviousWorkComponent } from './pages/previous-work/previous-work.compo
     NgbModule,
     RouterModule,
 
+    FormsModule,
+    HttpClientModule,
+    NgbModule,
+    NgxTypedJsModule,
+
     ComponentsModule,
     AppRoutingModule,
   ],
   declarations: [
     AppComponent,
-    CockpitLayoutComponent,
+    // CockpitLayoutComponent,
     InterestsAndHobbiesComponent,
     PreviousWorkComponent,
-    // HomepageComponent,
-    // AboutMeComponent,
-    // PersonalProjectsComponent
+    HomepageComponent,
+    AboutMeComponent,
+    PersonalProjectsComponent,
+    PagesComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
