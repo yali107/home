@@ -3,7 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
-import { PersonalProjectsComponent } from './pages/personal-projects/personal-projects.component';
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
+import { BlogComponent } from './pages/blog/blog.component';
+
 
 // const routes: Routes = [
 //   {
@@ -19,14 +21,15 @@ import { PersonalProjectsComponent } from './pages/personal-projects/personal-pr
 //   },
 // ];
 const routes: Routes = [
-  { path: 'aboutMe', component: AboutMeComponent },
-  { path: '', component: HomepageComponent },
-  { path: 'personalProjects', component: PersonalProjectsComponent }
+  { path: 'about', component: AboutMeComponent },
+  { path: 'home', component: HomepageComponent },
+  { path: 'portfolio', component: PortfolioComponent },
+  { path: 'blog', component: BlogComponent },
 ]
 
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

@@ -3,23 +3,30 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { fab } from '@fortawesome/free-brands-svg-icons';
 
-import { SidebarComponent } from './sidebar/sidebar.component';
 import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
     imports: [
         CommonModule,
         RouterModule,
-        NgbModule
+        NgbModule,
+
+        FontAwesomeModule
     ],
     declarations: [
-        SidebarComponent,
-        HeaderComponent
+        HeaderComponent,
+        FooterComponent
     ],
     exports: [
-        SidebarComponent,
         HeaderComponent
     ]
 })
-export class ComponentsModule {}
+export class ComponentsModule {
+    constructor(library: FaIconLibrary) {
+        library.addIconPacks(fab)
+    }
+}

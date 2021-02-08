@@ -4,14 +4,14 @@ import { Router } from '@angular/router';
 declare interface RouteInfo {
   path: string;
   title: string;
-  icon: string;
   class: string;
 }
 
 export const ROUTES: RouteInfo[] = [
-  { path: '/aboutMe', title: 'About Me',  icon: 'ni-tv-2 text-primary', class: '' },
-  { path: '/myInterests', title: 'My Interests',  icon: 'ni-planet text-blue', class: '' },
-  { path: '/personalProjects', title: 'Personal Projects',  icon: 'ni-pin-3 text-orange', class: '' },
+  { path: '/home', title: 'HOME', class: '' },
+  { path: '/portfolio', title: 'PORTFOLIO', class: '' },
+  { path: '/blog', title: 'BLOG', class: '' },
+  { path: '/about', title: 'ABOUT', class: '' },
 ];
 
 @Component({
